@@ -9,13 +9,13 @@
 </head>
 <body>
     <div id="calculadora">
-        <div id="pantalla">
+        <form id="fPantalla">
             <input name="pantalla" type="text" value="0">
-        </div>
+        </form>
         <div id="filaBotones">
-            <button id="botonNumero" onclick="introducirNumero('7')">7</button>
-            <button id="botonNumero" onclick="introducirNumero('8')">8</button>
-            <button id="botonNumero" onclick="introducirNumero('9')">9</button>
+            <button id="botonNumero" onclick="introducirNumero(7)">7</button>
+            <button id="botonNumero" onclick="introducirNumero(8)">8</button>
+            <button id="botonNumero" onclick="introducirNumero(9)">9</button>
             <button>*</button>
         </div>
         <div id="filaBotones">
@@ -33,7 +33,7 @@
         <div id="filaBotones">
             <button id="botonNumero">.</button>
             <button id="botonNumero">0</button>
-            <button>CLR</button>
+            <button onclick="borrar()">CLR</button>
             <button>=</button>
         </div>
     </div>    
