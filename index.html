@@ -19,22 +19,22 @@
             <button>*</button>
         </div>
         <div id="filaBotones">
-            <button id="botonNumero">4</button>
-            <button id="botonNumero">5</button>
-            <button id="botonNumero">6</button>
+            <button id="botonNumero" onclick="introducirNumero(4)">4</button>
+            <button id="botonNumero" onclick="introducirNumero(5)">5</button>
+            <button id="botonNumero" onclick="introducirNumero(6)">6</button>
             <button id="botonNumero">-</button>
         </div>
         <div id="filaBotones">
-            <button id="botonNumero">1</button>
-            <button id="botonNumero">2</button>
-            <button id="botonNumero">3</button>
-            <button>+</button>
+            <button id="botonNumero" onclick="introducirNumero(1)">1</button>
+            <button id="botonNumero" onclick="introducirNumero(2)">2</button>
+            <button id="botonNumero" onclick="introducirNumero(3)">3</button>
+            <button onclick="suma()">+</button>
         </div>
         <div id="filaBotones">
-            <button id="botonNumero">.</button>
-            <button id="botonNumero">0</button>
+            <button id="botonNumero" onclick="introducirNumero('.')">.</button>
+            <button id="botonNumero" onclick="introducirNumero(0)">0</button>
             <button onclick="borrar()">CLR</button>
-            <button>=</button>
+            <button onclick="mostrarResultado()">=</button>
         </div>
     </div>    
 </body>
