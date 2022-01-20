@@ -1,26 +1,13 @@
 body {
-    background-color: #161616;
-    font-family: monospace;
     font-size: 40px;
     text-align: center;
 }
 
 button {
-    font-family: monospace;
+    font-family: cursive;
     font-size: 25px;
-    border: none;
     height: 50px;
     width: 50px;
-    background-color: #0f62fe;
-}
-
-button:hover {
-    background-color: #78a9ff;
-}
-
-#filaBotones {
-    width: 100%;
-    padding-bottom: 3px;
 }
 
 #calculadora {
@@ -28,20 +15,14 @@ button:hover {
     width: 25%;
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid#0f62fe;
-}
-
-#pantalla {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 10px;
 }
 
 input[type=text] {
-    font-family: monospace;
-    background-color: #78a9ff;
-    border: none;
+    font-family: cursive;
     font-size: 65%;
     text-align: right;
-    width: 90%;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
 }
