@@ -10,46 +10,70 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="border border-primary border-4 rounded" id="calculadora">
-        <div class="row">
-            <div class="col">
-                <form id="fPantalla">
-                    <input class="form-control border border-primary rounded" name="pantalla" type="text" value="0">
-                </form>
-            </div>
+    <div class="row">
+        <div class="col">
+
         </div>
-        <div class="row">
-            <div class="col">
-                <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(7)">7</button>
-                <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(8)">8</button>
-                <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(9)">9</button>
-                <button class="btn btn-outline-primary" onclick="multiplicacion()">*</button>
-            </div>
+        <div class="col">
+            <div class="border border-primary border-4 rounded text-center position-relative " id="calculadora">
+                <div class="row">
+                    <div class="col">
+                        <form id="fPantalla">
+                            <input class="form-control border border-primary rounded fs-2 text-end mb-2" name="pantalla" type="text" value="0">
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-2">
+                        <button class="btn btn-outline-primary" onclick="fraccion()">1/<sub>x</sub></button>
+                        <button class="btn btn-outline-primary" onclick="cubo()">x<sup>y</sup></button>
+                        <button class="btn btn-outline-primary" onclick="raizCuadrada()"><sup>2</sup>&Sqrt;x</button>
+                        <button class="btn btn-outline-primary" onclick="division()">/</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-2">
+                        <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(7)">7</button>
+                        <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(8)">8</button>
+                        <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(9)">9</button>
+                        <button class="btn btn-outline-primary" onclick="multiplicacion()">*</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-2">
+                        <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(4)">4</button>
+                        <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(5)">5</button>
+                        <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(6)">6</button>
+                        <button id="botonNumero" class="btn btn-outline-primary" onclick="resta()">-</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-2">
+                        <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(1)">1</button>
+                        <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(2)">2</button>
+                        <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(3)">3</button>
+                        <button class="btn btn-outline-primary" onclick="suma()">+</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero('.')">.</button>
+                        <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(0)">0</button>
+                        <button class="btn btn-outline-primary" onclick="borrar()">CLR</button>
+                        <button class="btn btn-outline-primary" onclick="mostrarResultado()">=</button>
+                    </div>
+                </div>
+            </div>  
+            <footer>
+                <div class="row bg-primary fs-4 text-center">
+                    <div class="col">Autor: Dario Plácido Gandini</div>
+                    <div class="col">Mail: darioplacidogandini@outlook.com</div>
+                </div>
+            </footer>             
         </div>
-        <div class="row">
-            <div class="col">
-                <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(4)">4</button>
-                <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(5)">5</button>
-                <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(6)">6</button>
-                <button id="botonNumero" class="btn btn-outline-primary" onclick="resta()">-</button>
-            </div>
+        <div class="col">
+            
         </div>
-        <div class="row">
-            <div class="col">
-                <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(1)">1</button>
-                <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(2)">2</button>
-                <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(3)">3</button>
-                <button class="btn btn-outline-primary" onclick="suma()">+</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero('.')">.</button>
-                <button id="botonNumero" class="btn btn-outline-primary" onclick="introducirNumero(0)">0</button>
-                <button class="btn btn-outline-primary" onclick="borrar()">CLR</button>
-                <button class="btn btn-outline-primary" onclick="mostrarResultado()">=</button>
-            </div>
-        </div>
-    </div>    
+    </div> 
 </body>
 </html>
